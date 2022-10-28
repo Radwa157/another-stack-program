@@ -1,0 +1,51 @@
+package STACK3.JAVA;
+
+import java.util.Stack;
+
+public class stacksnfun {
+
+	public static void main(String[] args) {
+		 Stack<String> games= new Stack<>();
+	        // add element to stack
+	       
+	       games.add("call of duty");
+	       games.add("guitar hero");
+	       games.add("super monkey ball");
+	       
+	       System.out.println (games.peek());
+	       System.out.println(games.contains("pubg"));
+	       System.out.println(games.get(1));
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ package STACK3.JAVA;
+import java.util.Arrays;
+import java.util.Stack;
+public class Arraystack { 
+	public static <E> void reverse(E[ ] a) {
+		Stack<E> buffer = new Stack<E>();
+		for (int i=0; i < a.length; i++)
+		buffer.push(a[i]);
+		 for (int i=0; i < a.length; i++)
+		 a[i] = buffer.pop( );
+		}
+	public static void main(String args[ ]){
+ String[] a = {"Ahmed", "Omar","aly", "mohamed","ibrahim", "Osama"};
+ String[ ] b= {"OR", " Data Structure", "Data Base", " Cost Accounting", "Data Communication"};
+ System.out.println("a = " + Arrays.toString(a));
+ System.out.println("s = " + Arrays.toString(b));
+ System.out.println("Reversing...");
+	
+
+ reverse (a);
+ reverse (b);
+ System.out.println("a = " + Arrays.toString(a));
+ System.out.println("s = " + Arrays.toString(b));
+ 
+
+}
+
+}
+
